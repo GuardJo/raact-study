@@ -5,3 +5,6 @@ Chapter 01
 
 Chapter 02
 - https://trapezoidal-curiosity-d38.notion.site/Chapter-02-ES6-4afd413cfe4d4629a06b0d9934c5939f
+
+Chapter 03
+- https://trapezoidal-curiosity-d38.notion.site/Chapter-03-af65f5bda1254c6abf3e24faf6a7c13b
