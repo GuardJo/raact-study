@@ -32,28 +32,25 @@ class InputWithStyle extends PureComponent {
     }
 
     render() {
-        const { errorMessage, label, name, value, type, onFocus } = this.props;
+        const { errorMessage, label, name, value, type } = this.props;
         return (
-            <div className="row">
-                <div className="input=field">
-                    <input
-                        id={`input_${name}`}
-                        className={`validate ${errorMessage && 'invalid'}`}
-                        ref={this.setRef}
-                        onChange={this.handleChange}
-                        onFocus={onFocus}
-                        value={value}
-                        type={type}
-                    />
-                    <label className="active" for={`input_${name}`}>
-                        {label}
-                    </label>
-                    {errorMessage && (
-                        <span className="helper-text" data-error={errorMessage}>
-                            {errorMessage}
-                        </span>
-                    )}
-                </div>
+            <div className="input=field">
+                <input
+                    id={`input_${name}`}
+                    className={`validate ${errorMessage && 'invalid'}`}
+                    ref={this.setRef}
+                    onChange={this.handleChange}
+                    value={value}
+                    type={type}
+                />
+                <label className="active" htmlFor={`input_${name}`}>
+                    {label}
+                </label>
+                {errorMessage && (
+                    <span className="helper-text" data-error={errorMessage}>
+                        {errorMessage}
+                    </span>
+                )}
             </div>
         );
     }
@@ -72,7 +69,6 @@ InputWithStyle.propTypes = {
 
 InputWithStyle.defaultProps = {
     onChange: () => {},
-    onFocus: () => {},
     autoFocus: false,
     type: 'text',
 };
