@@ -53,3 +53,5 @@
 
 ## 4. 디자인 시스템
 [4-1. 비주얼 테스트](./docs/Chapter04.%20Airbnb%20Clone%20Design/1.%20Visual%20Test.md)
+
+[4-2. CSS로 컴포넌트 스타일 적용](./docs/Chapter04.%20Airbnb%20Clone%20Design/2.%20Apply%20Component%20Style%20From%20CSS.md)
