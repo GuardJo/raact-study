@@ -27,6 +27,7 @@ export default {
         white: '#FFFFFF',
         gray: '#CCCCCC',
         default: '#999999',
+        error: '#FF0000',
     },
 
     // 글꼴 크기
