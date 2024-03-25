@@ -59,3 +59,5 @@
 [4-3. 스타일 컴포넌트 구성](./docs/Chapter04.%20Airbnb%20Clone%20Design/3.%20Make%20Style%20Component.md)
 
 [4-4. 테스트 위주 컴포넌트 개발](./docs/Chapter04.%20Airbnb%20Clone%20Design/4.%20Test-Driven%20Development.md)
+
+[4-5. 복습 : Checkbox 컴포넌트 구현](./docs/Chapter04.%20Airbnb%20Clone%20Design/5.%20Recap-CustomCheckbox.md)
