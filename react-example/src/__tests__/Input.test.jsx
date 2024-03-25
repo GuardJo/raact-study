@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import Input from '../03/Input';
 
 describe('<Input>', () => {
     it('renders without crashing', () => {
-        const div = document.createElement('div');
-
-        ReactDOM.render(<Input name='test'></Input>, div);
-        ReactDOM.unmountComponentAtNode(div);
-
-        expect(React.isValidElement(<Input name='test'></Input>)).toBeTruthy();
+        expect(() => {
+            shallow(<Input name='test'></Input>);
+        }).not.toThrow();
+    });
+    it('has one element', () => {
+        const actual = shallow(<Input name='test'></Input>);
+        expect(actual.length).toEqual(1);
+        expect(actual).toHaveLength(1);
     });
 });
