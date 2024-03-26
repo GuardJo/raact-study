@@ -1,20 +1,22 @@
 import React from 'react';
 
-export default function withLoading(WrappedComponent) {
-    const {displayName, name : componentName} = WrappedComponent;
-    const wrappedComponentName = displayName || componentName;
-
-    function withLoading({isLoading, ...others}) {
-        if (isLoading) {
-            return 'Loading...';
-        }
+export default function(loadingMessage = 'loading...') {
+    return function withLoading(WrappedComponent) {
+        const {displayName, name : componentName} = WrappedComponent;
+        const wrappedComponentName = displayName || componentName;
     
-        return (
-            <WrappedComponent {...others}></WrappedComponent>
-        );
+        function withLoading({isLoading, ...others}) {
+            if (isLoading) {
+                return loadingMessage;
+            }
+        
+            return (
+                <WrappedComponent {...others}></WrappedComponent>
+            );
+        };
+    
+        withLoading.displayName = `withLoading(${wrappedComponentName})`;
+    
+        return withLoading;
     };
-
-    withLoading.displayName = `withLoading(${wrappedComponentName})`;
-
-    return withLoading;
 };

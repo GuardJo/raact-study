@@ -4,8 +4,8 @@ import CustomBotton from "../04/CustomBotton"
 import Text from "../04/Text"
 import withLoading from "../05/withLoading";
 
-const ButtonWithHoC = withLoading(CustomBotton);
-const TextWithHoC = withLoading(Text);
+const ButtonWithHoC = withLoading()(CustomBotton);
+const TextWithHoC = withLoading('test loading')(Text);
 
 storiesOf('WithHoC', module)
 .addWithJSX('기본 설정', () => {
