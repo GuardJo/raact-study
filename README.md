@@ -61,3 +61,6 @@
 [4-4. 테스트 위주 컴포넌트 개발](./docs/Chapter04.%20Airbnb%20Clone%20Design/4.%20Test-Driven%20Development.md)
 
 [4-5. 복습 : Checkbox 컴포넌트 구현](./docs/Chapter04.%20Airbnb%20Clone%20Design/5.%20Recap-CustomCheckbox.md)
+
+## 5. 하이어오더 컴포넌트
+[5-1. 커링과 함수 조합](./docs/Chapter05.%20High%20Order%20Component/1.%20Currying%20and%20Compose.md)
