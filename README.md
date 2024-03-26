@@ -64,3 +64,5 @@
 
 ## 5. 하이어오더 컴포넌트
 [5-1. 커링과 함수 조합](./docs/Chapter05.%20High%20Order%20Component/1.%20Currying%20and%20Compose.md)
+
+[5-2. 하이어오더 컴포넌트 기초](./docs/Chapter05.%20High%20Order%20Component/2.%20Basic%20Higher%20Order%20Component.md)
