@@ -1,16 +1,18 @@
 import React from "react";
 import lifecycle from "recompose/lifecycle";
+import withLoading from "./withLoading";
+import compose from "recompose/compose";
 
 function Page({content}) {
     return (
         <div>
             페이지 로딩 완료
-            {content}
+            <p>{content}</p>
         </div>
     );
 }
 
-export const withLoadLifecycle = lifecycle({
+const withLoadLifecycle = lifecycle({
     state: {isLoading: true, content: ''},
     componentDidMount: function() {
         if (this.props.loadData) {
@@ -19,4 +21,5 @@ export const withLoadLifecycle = lifecycle({
     },
 });
 
-export const LifecycleLoadPage = withLoadLifecycle(Page);
+
+export const LifecycleLoadPage = compose(withLoadLifecycle, withLoading('loading...'))(Page);

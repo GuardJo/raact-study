@@ -3,8 +3,8 @@ import React from "react";
 import { LifecycleLoadPage } from "../05/LifecycleComponent";
 
 storiesOf('LifecycleLoadComponent', module)
-.addWithJSX('기본 설정', () => {
+.addWithJSX('loadData 예제', () => {
     return (
-        <LifecycleLoadPage>test</LifecycleLoadPage>
+        <LifecycleLoadPage loadData={() => fetch('/').then(() => 'hello')}></LifecycleLoadPage>
     );
 });
