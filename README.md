@@ -72,3 +72,6 @@
 [5-4. 다중 하이어오더 컴포넌트 활용](./docs/Chapter05.%20High%20Order%20Component/4.%20Use%20Multi%20Higher%20Order%20Component.md)
 
 [5-5. 복습 : 필수 입력 항목 표시를 위한 HOC 구성](./docs/Chapter05.%20High%20Order%20Component/5.%20Recap-Requited%20Input%20Component.md)
+
+## 6. Context 데이터 관리
+[6-1. Context 기초](./docs/Chapter06.%20Context%20Management/1.%20Context%20Basic.md)
