@@ -79,3 +79,5 @@
 [6-2. 중복 Provider를 통한 Context 활용](./docs/Chapter06.%20Context%20Management/2.%20Use%20Context%20from%20Multi%20Providers.md)
 
 [6-3. Context API 활용](./docs/Chapter06.%20Context%20Management/3.%20Use%20Context%20API.md)
+
+[6-4. Context 기반 모달 구현](./docs/Chapter06.%20Context%20Management/4.%20Development%20Modal%20by%20Context.md)
