@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
-import { ButtionWithLoading2Context, ButtonWithDefaultLoadingContext } from './ButtonWithLoadingContextAndKey';
+import { ButtionWithLoading2Context, ButtonWithDefaultLoadingContext, ComposeWithContext } from './ButtonWithLoadingContextAndKey';
 import LoadingProviderWithKey from './LoadingProviderWithKey';
+import ButtonWithConsumer from './ButtionWithConsumer';
 
 const LoadingProvider1 = LoadingProviderWithKey();
 const LoadingProvider2 = LoadingProviderWithKey('loading2');
@@ -10,6 +11,7 @@ function TableComponent() {
         <table>
             <ButtonWithDefaultLoadingContext>default</ButtonWithDefaultLoadingContext>
             <ButtionWithLoading2Context>loading2</ButtionWithLoading2Context>
+            <ButtonWithConsumer>consumer</ButtonWithConsumer>
         </table>
     );
 }

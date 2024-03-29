@@ -13,4 +13,4 @@ storiesOf('ButtonWithLoadingContext', module)
 })
 .addWithJSX('Loading Provider with Key 예제', () => {
     return <HomePageComponentWithKey>test</HomePageComponentWithKey>
-})
+});
