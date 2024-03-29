@@ -12,6 +12,7 @@ function TableComponent() {
             <ButtonWithDefaultLoadingContext>default</ButtonWithDefaultLoadingContext>
             <ButtionWithLoading2Context>loading2</ButtionWithLoading2Context>
             <ButtonWithConsumer>consumer</ButtonWithConsumer>
+            <ButtonWithConsumer>context api</ButtonWithConsumer>
         </table>
     );
 }
