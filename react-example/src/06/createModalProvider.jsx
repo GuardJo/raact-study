@@ -15,8 +15,9 @@ export default function (ContentMap = {}) {
             this.setState({showModal: false});
         }
 
-        handleOpen(contentId) {
+        handleOpen(contentId, modalProps) {
             this.contentId = contentId;
+            this.modalProps = modalProps;
             this.setState({showModal: true});
         }
 
@@ -33,7 +34,7 @@ export default function (ContentMap = {}) {
                     {children}
                     {showModal && ModalContent && (
                         <Modal>
-                            <ModalContent/>
+                            <ModalContent {...this.modalProps} />
                         </Modal>
                     )}
                 </Provider>

@@ -44,7 +44,7 @@ storiesOf('Modal', module)
                 <Text>버튼 클릭</Text>
                 <ModalConsumer>
                     {({openModal}) => (
-                        <CustomBotton onPress={() => openModal(CONFIRM_DELETE_MODAL)}>삭제 모달</CustomBotton>
+                        <CustomBotton onPress={() => openModal(CONFIRM_DELETE_MODAL, {productName: 'item'})}>삭제 모달</CustomBotton>
                     )}
                 </ModalConsumer>
             </div>
