@@ -5,6 +5,8 @@ import CustomBotton from "../04/CustomBotton";
 import Text from "../04/Text";
 import ButtonWithModal from "../06/ButtonWithModal";
 import ModalProvider, { Consumer } from "../06/ModalProvider";
+import ModalProviderWithKey, { CONFIRM_DELETE_MODAL } from "../06/ModalProviderWithKey";
+import { Consumer as ModalConsumer } from "../06/ModalContext";
 
 storiesOf('Modal', module)
 .addWithJSX('기본 설정', () => {
@@ -34,4 +36,18 @@ storiesOf('Modal', module)
             </div>
         </ModalProvider>
     );
+})
+.addWithJSX('ModalProvider With Key', () => {
+    return (
+        <ModalProviderWithKey>
+            <div>
+                <Text>버튼 클릭</Text>
+                <ModalConsumer>
+                    {({openModal}) => (
+                        <CustomBotton onPress={() => openModal(CONFIRM_DELETE_MODAL)}>삭제 모달</CustomBotton>
+                    )}
+                </ModalConsumer>
+            </div>
+        </ModalProviderWithKey>
+    )
 });
