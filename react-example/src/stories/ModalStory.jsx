@@ -5,7 +5,7 @@ import CustomBotton from "../04/CustomBotton";
 import Text from "../04/Text";
 import ButtonWithModal from "../06/ButtonWithModal";
 import ModalProvider, { Consumer } from "../06/ModalProvider";
-import ModalProviderWithKey, { CONFIRM_DELETE_MODAL } from "../06/ModalProviderWithKey";
+import ModalProviderWithKey, { CONFIRM_DELETE_MODAL, SIGN_UP_MODAL } from "../06/ModalProviderWithKey";
 import { Consumer as ModalConsumer } from "../06/ModalContext";
 
 storiesOf('Modal', module)
@@ -50,4 +50,18 @@ storiesOf('Modal', module)
             </div>
         </ModalProviderWithKey>
     )
+})
+.addWithJSX('회원가입 모달', () => {
+    return (
+        <ModalProviderWithKey>
+            <div>
+                <Text>버튼 클릭</Text>
+                <ModalConsumer>
+                    {({openModal}) => (
+                        <CustomBotton onPress={() => openModal(SIGN_UP_MODAL)}>회원가입 모달</CustomBotton>
+                    )}
+                </ModalConsumer>
+            </div>
+        </ModalProviderWithKey>
+    );
 });
