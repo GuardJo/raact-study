@@ -3,7 +3,7 @@ import CustomBotton from '../04/CustomBotton';
 import Modal from './Modal';
 import Text from '../04/Text';
 
-class ButtionWithModal extends PureComponent {
+class ButtonWithModal extends PureComponent {
     constructor(props) {
         super(props);
 
@@ -28,4 +28,4 @@ class ButtionWithModal extends PureComponent {
     }
 }
 
-export default ButtionWithModal;
+export default ButtonWithModal;

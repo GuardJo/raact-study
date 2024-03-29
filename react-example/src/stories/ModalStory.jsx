@@ -3,7 +3,8 @@ import React from "react";
 import Modal from "../06/Modal";
 import CustomBotton from "../04/CustomBotton";
 import Text from "../04/Text";
-import ButtionWithModal from "../06/ButtionWithModal";
+import ButtonWithModal from "../06/ButtonWithModal";
+import ModalProvider, { Consumer } from "../06/ModalProvider";
 
 storiesOf('Modal', module)
 .addWithJSX('기본 설정', () => {
@@ -19,6 +20,18 @@ storiesOf('Modal', module)
 })
 .addWithJSX('Buttion 예시', () => {
     return (
-        <ButtionWithModal></ButtionWithModal>
-    )
+        <ButtonWithModal></ButtonWithModal>
+    );
+})
+.addWithJSX('ModalProvider 예시', () => {
+    return (
+        <ModalProvider>
+            <div>
+                <Text>모달 실행</Text>
+                <Consumer>
+                    {({openModal}) => <CustomBotton onPress={() => openModal()}>삭제</CustomBotton>}
+                </Consumer>
+            </div>
+        </ModalProvider>
+    );
 });
