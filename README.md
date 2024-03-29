@@ -75,3 +75,5 @@
 
 ## 6. Context 데이터 관리
 [6-1. Context 기초](./docs/Chapter06.%20Context%20Management/1.%20Context%20Basic.md)
+
+[6-2. 중복 Provider를 통한 Context 활용](./docs/Chapter06.%20Context%20Management/2.%20Use%20Context%20from%20Multi%20Providers.md)
