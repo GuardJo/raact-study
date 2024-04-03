@@ -83,3 +83,6 @@
 [6-4. Context 기반 모달 구현](./docs/Chapter06.%20Context%20Management/4.%20Development%20Modal%20by%20Context.md)
 
 [6-5. 복습 : Context를 통한 Form 컴포넌트 구현](./docs/Chapter06.%20Context%20Management/5.%20Recap-Input%20Form%20Component%20Dev.md)
+
+## 7. Redux 기반 데이터 관리
+[7-1. Redux 기초](./docs/Chapter07.%20Redux%20Management/1.%20Redux%20Basic.md)
