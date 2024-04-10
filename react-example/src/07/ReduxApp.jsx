@@ -4,6 +4,8 @@ import configureStore from './configureStore';
 import { resetLoading, setLoading } from './actions/loadingAction';
 import { setUser } from './actions/userAction';
 import { setAge, setCollection } from './actions/collectionAction';
+import PresentationComponent from './PresentationComponent';
+import ContainerComponent from './container/ContainerComponent';
 
 export default class ReduxApp extends PureComponent {
     store = configureStore({ loading: false });
@@ -42,6 +44,12 @@ export default class ReduxApp extends PureComponent {
     }
 
     render() {
-        return <Provider store={this.store}>리덕스 예제</Provider>;
+        return (
+            <Provider store={this.store}>
+                화면 컴포넌트 : <PresentationComponent userName="화면 컴포넌트" />
+                <br />
+                데이터 컴포넌트 : <ContainerComponent id={2} />
+            </Provider>
+        );
     }
 }
