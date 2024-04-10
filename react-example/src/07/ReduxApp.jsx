@@ -6,6 +6,7 @@ import { setUser } from './actions/userAction';
 import { setAge, setCollection } from './actions/collectionAction';
 import PresentationComponent from './PresentationComponent';
 import ContainerComponent from './container/ContainerComponent';
+import DispatchContainer from './container/DispatchContainer';
 
 export default class ReduxApp extends PureComponent {
     store = configureStore({ loading: false });
@@ -49,6 +50,8 @@ export default class ReduxApp extends PureComponent {
                 화면 컴포넌트 : <PresentationComponent userName="화면 컴포넌트" />
                 <br />
                 데이터 컴포넌트 : <ContainerComponent id={2} />
+                <br />
+                액션 컴포넌트 : <DispatchContainer />
             </Provider>
         );
     }

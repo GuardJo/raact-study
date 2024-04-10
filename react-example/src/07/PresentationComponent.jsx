@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-class PresentationComponent extends Component {
+class PresentationComponent extends PureComponent {
     render() {
         const { userName, entity } = this.props;
         return (
