@@ -90,3 +90,5 @@
 [7-2. Action과 Reducer](./docs/Chapter07.%20Redux%20Management/2.%20Action%20and%20Reducer.md)
 
 [7-3. Graph Database](./docs/Chapter07.%20Redux%20Management/3.%20Graph%20Database.md)
+
+[7-4. Data Component](./docs/Chapter07.%20Redux%20Management/4.%20Data%20Component.md)
