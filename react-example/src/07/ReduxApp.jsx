@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import configureStore from './configureStore';
 import { resetLoading, setLoading } from './actions/loadingAction';
 import { setUser } from './actions/userAction';
+import { setAge, setCollection } from './actions/collectionAction';
 
 export default class ReduxApp extends PureComponent {
     store = configureStore({ loading: false });
@@ -15,6 +16,29 @@ export default class ReduxApp extends PureComponent {
                 name: 'tester',
             }),
         );
+
+        this.store.dispatch(
+            setCollection([
+                { id: 1, name: 'test1', age: 20 },
+                { id: 2, name: 'test2', age: 30 },
+            ]),
+        );
+
+        this.getDataFromDB();
+        this.updateAgeFromDB(1, 50);
+    }
+
+    // Graph DB 데이터 조회
+    getDataFromDB() {
+        const { collection } = this.store.getState();
+        const { ids, entities } = collection;
+        const originalPayload = ids.map((id) => entities[id]);
+        console.log(originalPayload);
+    }
+
+    // Graph DB 특정 데이터 수정
+    updateAgeFromDB(id, age) {
+        this.store.dispatch(setAge(id, age));
     }
 
     render() {
