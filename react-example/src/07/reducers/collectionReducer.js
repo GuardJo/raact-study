@@ -1,4 +1,4 @@
-import { SET_COLLECTION } from '../actions/collectionAction';
+import { SET_AGE, SET_COLLECTION } from '../actions/collectionAction';
 
 const initState = {
     ids: [],
@@ -22,6 +22,19 @@ export default function (state = initState, action) {
                 ...state,
                 ids,
                 entities,
+            };
+        }
+        case SET_AGE: {
+            const { id, age } = payload;
+            return {
+                ...state,
+                entities: {
+                    ...state.entities,
+                    [id]: {
+                        ...state.entities[id],
+                        age,
+                    },
+                },
             };
         }
         default:
