@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import configureStore from './configureStore';
 import { resetLoading, setLoading } from './actions/loadingAction';
 import { setUser } from './actions/userAction';
+import { setCollection } from './actions/collectionAction';
 
 export default class ReduxApp extends PureComponent {
     store = configureStore({ loading: false });
@@ -14,6 +15,13 @@ export default class ReduxApp extends PureComponent {
             setUser({
                 name: 'tester',
             }),
+        );
+
+        this.store.dispatch(
+            setCollection([
+                { id: 1, name: 'test1', age: 20 },
+                { id: 2, name: 'test2', age: 30 },
+            ]),
         );
     }
 
