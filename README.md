@@ -86,3 +86,5 @@
 
 ## 7. Redux 기반 데이터 관리
 [7-1. Redux 기초](./docs/Chapter07.%20Redux%20Management/1.%20Redux%20Basic.md)
+
+[7-2. Action과 Reducer](./docs/Chapter07.%20Redux%20Management/2.%20Action%20and%20Reducer.md)
