@@ -92,3 +92,5 @@
 [7-3. Graph Database](./docs/Chapter07.%20Redux%20Management/3.%20Graph%20Database.md)
 
 [7-4. Data Component](./docs/Chapter07.%20Redux%20Management/4.%20Data%20Component.md)
+
+[7-5 복습 : 검색 조회 및 저장 기능 구현](./docs/Chapter07.%20Redux%20Management/5.%20Recap-Search%20Component.md)
